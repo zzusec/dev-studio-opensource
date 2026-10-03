@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hx10 · 开源作品目录</title>
+  <meta name="description" content="hx10 维护的开源项目索引。当前 6 个项目，全部 MIT 授权，接受 issue 与 PR。">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=departure-mono@400,500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <a href="/" class="wordmark">hx10<span class="dot">.</span>dev</a>
+    <nav class="masthead-nav" aria-label="主导航">
+      <a href="#index">作品目录</a>
+      <a href="#notes">维护札记</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="manifest" aria-labelledby="manifest-title">
+    <h1 id="manifest-title" class="manifest-title">
+      开源作品目录<span class="revision">rev. 2026.10</span>
+    </h1>
+    <div class="manifest-body">
+      <p class="lede">
+        我写代码，然后把不依赖公司的部分公开出来。这里列的是当下仍在维护的六个项目，全部使用 MIT 许可证，欢迎使用、fork 与提交 issue。若某个项目不再维护，我会把它挪到 <a href="#archive">归档</a> 一节，而不是悄悄删除。
+      </p>
+      <dl class="manifest-meta">
+        <div><dt>维护者</dt><dd>hx10</dd></div>
+        <div><dt>时区</dt><dd>UTC+8 · 上海</dd></div>
+        <div><dt>累计提交</dt><dd>约 4,300</dd></div>
+        <div><dt>响应窗口</dt><dd>工作日 24h 内</dd></div>
+        <div><dt>许可证</dt><dd>MIT，全部一致</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="index" class="index" aria-labelledby="index-title">
+    <h2 id="index-title" class="section-heading">作品目录</h2>
+
+    <ol class="project-list" role="list">
+
+      <li class="project" data-status="active">
+        <div class="p-body">
+          <h3 class="p-name">
+            <a href="https://github.com" target="_blank" rel="noopener">CodeFlow</a>
+          </h3>
+          <p class="p-desc">
+            基于 AST 静态分析的代码审查工具，覆盖 TypeScript、Python 与 Go。目前主要用于我们组的 monorepo，每天约跑 400 次。规则以插件形式扩展，社区贡献了 11 条。
+          </p>
+        </div>
+        <div class="p-meta">
+          <span class="m-line"><span class="m-key">lang</span><span class="m-val">TypeScript</span></span>
+          <span class="m-line"><span class="m-key">ver</span><span class="m-val">0.14.2</span></span>
+          <span class="m-line"><span class="m-key">stars</span><span class="m-val">2,412</span></span>
+          <span class="m-line"><span class="m-key">push</span><span class="m-val">2026-09-28</span></span>
+        </div>
+      </li>
+
+      <li class="project" data-status="active">
+        <div class="p-body">
+          <h3 class="p-name">
+            <a href="https://github.com" target="_blank" rel="noopener">SwiftDeploy</a>
+          </h3>
+          <p class="p-desc">
+            把 Docker 镜像推到 Cloudflare Workers / Fly.io / Vercel 三个平台的单一 CLI。没有 YAML，没有 plugin 系统。核心 800 行，够用时就这样。
+          </p>
+        </div>
+        <div class="p-meta">
+          <span class="m-line"><span class="m-key">lang</span><span class="m-val">Go</span></span>
+          <span class="m-line"><span class="m-key">ver</span><span class="m-val">1.2.0</span></span>
+          <span class="m-line"><span class="m-key">stars</span><span class="m-val">1,834</span></span>
+          <span class="m-line"><span class="m-key">push</span><span class="m-val">2026-08-14</span></span>
+        </div>
+      </li>
+
+      <li class="project" data-status="active">
+        <div class="p-body">
+          <h3 class="p-name">
+            <a href="https://github.com" target="_blank" rel="noopener">PixelUI</a>
+          </h3>
+          <p class="p-desc">
+            给内部产品用的 React 组件库，32 个组件。刻意不做主题系统，只保留一份暗色变量表。所有交互组件走 WAI-ARIA Authoring Practices，测试通过 axe-core。
+          </p>
+        </div>
+        <div class="p-meta">
+          <span class="m-line"><span class="m-key">lang</span><span class="m-val">TypeScript</span></span>
+          <span class="m-line"><span class="m-key">ver</span><span class="m-val">3.1.4</span></span>
+          <span class="m-line"><span class="m-key">stars</span><span class="m-val">3,627</span></span>
+          <span class="m-line"><span class="m-key">push</span><span class="m-val">2026-10-01</span></span>
+        </div>
+      </li>
+
+      <li class="project" data-status="stable">
+        <div class="p-body">
+          <h3 class="p-name">
+            <a href="https://github.com" target="_blank" rel="noopener">LogLens</a>
+          </h3>
+          <p class="p-desc">
+            本地运行的结构化日志浏览器。读取 JSON Lines 文件，提供 grep、时间线、字段透视，不需要先把日志发到云上。适合单机调试和隐私敏感的场景。
+          </p>
+        </div>
+        <div class="p-meta">
+          <span class="m-line"><span class="m-key">lang</span><span class="m-val">Rust</span></span>
+          <span class="m-line"><span class="m-key">ver</span><span class="m-val">0.9.0-rc.2</span></span>
+          <span class="m-line"><span class="m-key">stars</span><span class="m-val">962</span></span>
+          <span class="m-line"><span class="m-key">push</span><span class="m-val">2026-06-22</span></span>
+        </div>
+      </li>
+
+      <li class="project" data-status="active">
+        <div class="p-body">
+          <h3 class="p-name">
+            <a href="https://github.com" target="_blank" rel="noopener">ConfigKit</a>
+          </h3>
+          <p class="p-desc">
+            Python SDK，把环境变量、远程配置（Consul / etcd）与本地文件收敛成同一份 schema。冷启动 40ms 以内，支持 watch 与 graceful reload。
+          </p>
+        </div>
+        <div class="p-meta">
+          <span class="m-line"><span class="m-key">lang</span><span class="m-val">Python</span></span>
+          <span class="m-line"><span class="m-key">ver</span><span class="m-val">2.0.1</span></span>
+          <span class="m-line"><span class="m-key">stars</span><span class="m-val">721</span></span>
+          <span class="m-line"><span class="m-key">push</span><span class="m-val">2026-09-11</span></span>
+        </div>
+      </li>
+
+      <li class="project" data-status="stable">
+        <div class="p-body">
+          <h3 class="p-name">
+            <a href="https://github.com" target="_blank" rel="noopener">AuthGuard</a>
+          </h3>
+          <p class="p-desc">
+            Express / Fastify 中间件。OAuth 2.1、Passkey、Session，一份 API。JWT 只在无状态场景使用，其余情况优先 session。附带速率限制与 refresh token 轮转。
+          </p>
+        </div>
+        <div class="p-meta">
+          <span class="m-line"><span class="m-key">lang</span><span class="m-val">TypeScript</span></span>
+          <span class="m-line"><span class="m-key">ver</span><span class="m-val">1.6.3</span></span>
+          <span class="m-line"><span class="m-key">stars</span><span class="m-val">1,286</span></span>
+          <span class="m-line"><span class="m-key">push</span><span class="m-val">2026-07-30</span></span>
+        </div>
+      </li>
+
+    </ol>
+  </section>
+
+  <section id="notes" class="notes" aria-labelledby="notes-title">
+    <h2 id="notes-title" class="section-heading">维护札记</h2>
+    <div class="notes-body">
+      <p>
+        我不相信一个人能同时维护六个高活跃仓库。这份列表里，PixelUI 与 CodeFlow 是每天真的在用的，SwiftDeploy 每季度会更新一次，LogLens、ConfigKit 和 AuthGuard 处于<strong>稳定运行、少量维护</strong>的状态：修 bug、合 PR、每年做一次依赖升级，不加新功能。
+      </p>
+      <p>
+        Issue 我 24 小时内看，PR 优先看测试覆盖。如果我不打算接一个功能，会在两周内说明理由而不是让它在 backlog 里躺着。这条规矩来自我自己维护者时期最讨厌的体验。
+      </p>
+      <p>
+        依赖方面我一向保守。Node 生态只信 pnpm、vitest 与 esbuild；Python 用 uv + pyright；Go 只用标准库，除非标准库确实缺东西。选依赖的判断标准不是流行度，是维护者是否公开回应 issue。
+      </p>
+      <p>
+        关于命名，我偏执地认为名字要能读出来。<em>SwiftDeploy</em> 曾经叫 <em>sd</em>，直到我发现同事在会议里说"<em>es-dee</em> 那个东西"完全听不懂，就改了。
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title" class="section-heading">联系与源</h2>
+    <dl class="contact-list">
+      <div class="c-row"><dt>GitHub</dt><dd><a href="https://github.com" target="_blank" rel="noopener">github.com/hx10</a></dd></div>
+      <div class="c-row"><dt>Email</dt><dd><a href="mailto:hi@hx10.dev">hi@hx10.dev</a></dd></div>
+      <div class="c-row"><dt>Bluesky</dt><dd><a href="https://bsky.app" target="_blank" rel="noopener">@hx10.dev</a></dd></div>
+      <div class="c-row"><dt>RSS</dt><dd><a href="/feed.xml">/feed.xml</a>（更新日志与偶发长文）</dd></div>
+      <div class="c-row"><dt>Source</dt><dd>本站源码在 <a href="https://github.com" target="_blank" rel="noopener">github.com/hx10/site</a>，也是 MIT</dd></div>
+    </dl>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>© 2026 hx10 · 除特别标注外，全部作品采用 <abbr title="Massachusetts Institute of Technology">MIT</abbr> 许可证</p>
+    <p class="footer-meta">Build 2026.10.02 · 4.2 kB CSS</p>
+  </div>
+</footer>
+
+</body>
+</html>

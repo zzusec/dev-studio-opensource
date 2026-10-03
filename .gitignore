@@ -1,0 +1,19 @@
+# Qoder Sites 发布描述符，工具生成，不属于源码
+*.qoder.site
+
+# macOS / 编辑器 / 系统噪声
+.DS_Store
+.swp
+~$*
+.idea/
+.vscode/
+
+# Node / 依赖（本仓库是纯静态站，一般不会用到，防御性列出）
+node_modules/
+package/
+*.tgz
+npm-debug.log*
+
+# 环境文件
+.env
+.env.*
